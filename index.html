@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container1">
+            <h1 class="h1shadow">SECURE KEY</h1>
+            <H4>Generate. Secure. Relax.</H4>
+    </div>
+    <div class="container">
+     
+        <div class="display-container">
+            <span class="copied-text"></span>
+            <input type="text" readonly placeholder="Password Length" class="display" data-passwordDisplay />
+            <button data-copy>
+                <img src="./assets/copy.svg" alt="copy" height="23" width="23">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="pass-length">
+                <p>Password Length</p>
+                <span class="passlength"></span>
+            </div>
+            <div class="pass-range">
+                <input type="range" name="setRange" id="rangeSetter" step="1" max="20" min="1">
+            </div>
+            <div class="input-checkboxes">
+                <div>
+                    <input type="checkbox" name="uppercase" id="includeUpperCase" class="checkbox">
+                    <label for="includeUpperCase">Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lowerCase" id="includeLowerCase" class="checkbox">
+                    <label for="includeLowerCase">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="numbers" id="includeNumbers" class="checkbox">
+                    <label for="includeNumbers">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="symbols" id="includeSymbols" class="checkbox">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+            </div>
+            <div class="strength-section">
+                <p class="text">Strength</p>
+                <div class="indicator"></div>
+            </div>
+            <button class="generate-password">GENERATE PASSWORD</button>
+        </div>
+    </div>
+
+    <div class="container2">
+            <h3>Secure Your Digital World : Password Protection Starts with You!</h3>
+        <h3>Keep It Secret, Keep It Safe.</h3>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
